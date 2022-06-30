@@ -14,11 +14,13 @@ node():data(0),next(NULL){}
 };
 //add two no given as reverse digits ll form
 
-node* ad2noasll(node *head1,node *head2){
+node* ad2noasll(node *head1,node *head2)
+{
     node* temp1=head1;
     node*temp2=head2;
     node* res = new node();//dummy node creation 
     node* current=res;
+
     int carry=0;
    while(temp1 || temp2 || carry){
        int sum=0;
@@ -39,7 +41,8 @@ node* ad2noasll(node *head1,node *head2){
        }
     return res->next;
 }
-int main(){ 
+int main()
+{ 
      node n1(1);   // node n1={10,NULL};
      node n2(2);   // node n2={20,NULL};
      node n3(3);   // node n3={30,NULL}; 
