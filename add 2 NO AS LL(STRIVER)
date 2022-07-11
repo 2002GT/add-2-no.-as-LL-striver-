@@ -17,19 +17,23 @@ node():data(0),next(NULL){}
 node* ad2noasll(node *head1,node *head2)
 {
     node* temp1=head1;
+
     node*temp2=head2;
+
     node* res = new node();//dummy node creation 
     node* current=res;
 
     int carry=0;
    while(temp1 || temp2 || carry){
        int sum=0;
-       if(temp1 != NULL){
+       if(temp1 != NULL)
+{
            sum +=temp1->data;
            temp1=temp1->next;
        }
        
        if(temp2 != NULL){
+
            sum+=temp2->data;
            temp2=temp2->next;
        }
